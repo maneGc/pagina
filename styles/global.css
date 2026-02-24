@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik+Mono+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: pOppins, sans-serif;
+}
+
+/* #region PAGINA PRINCIPAL*/
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+body{
+    background-color: #f2f2f2;
+}
+.nav{
+    border-bottom: 1px solid #e0e0e0;
+}
+.nav__container{
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+}
+
+.nav__list{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    list-style: none;
+}
+
+.nav__link{
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: #1d2fcf;
+}
+
+.nav__link::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #1d2fcf;
+    transition: all .3s ease;
+    clip-path: circle(0% at 50% 50%);
+}
+
+.nav__link:hover::after{
+    clip-path: circle(150% at 50% 50%);
+}
+
+
+.logo{
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    align-self: center;
+    font-family: Poppins, sans-serif;
+    background-color: #1d2fcf;
+    color: white;
+    padding: 5px 14px;
+    position: relative;
+}
+
+
+.logo::after,.logo::before{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #1d2fcf85;
+    top: -5px;
+    left: -5px;
+    position: absolute;
+    z-index: -1;
+    
+}
+
+.logo::before{
+    top: 5px;
+    left: 5px;
+    background-color: #096bfd81;
+}
+
+.title{
+    font-size: 1.8rem;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    color: #1d2fcf;
+
+}
+
+
+
+.footer{
+    background-color: #1d2fcf;
+    height: 160px;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    
+
+}
