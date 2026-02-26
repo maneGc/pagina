@@ -109,3 +109,32 @@ body{
     
 
 }
+
+
+.btn__home{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #1d2fcf;
+    color: white;
+    display: flex;
+    width: 70px;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all .3s ease;
+}
+
+.btn__home:hover{
+    background-color: #096bfd;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transition: all .3s ease;
+}
+
+.home__img{
+    width: 50px;
+    height: 50px;
+}
