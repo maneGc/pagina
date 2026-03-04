@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+
+}
+
+body{
+    background-color: #f5f5f5
+}
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo{
+    font-size: 1.7rem;
+    font-weight: 700;
+    background-color: #1b1e1f;
+    font-family: Montserrat,sans-serif;
+    text-decoration: none;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 10px;
+    box-shadow: 0px -7px 0px rgb(5, 41, 248), 0px -14px 0px rgba(60, 7, 250, 0.795);
+    
+
+}
+
+
+.nav__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+
+.footer{
+    background-color: #051444d3;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 20px;
+    border-radius: 50px 50px 0 0;
+}
+
