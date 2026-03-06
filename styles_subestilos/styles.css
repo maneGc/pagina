@@ -8,6 +8,11 @@
 
 }
 
+body{
+    background-image: url('../img/path_sub.png');
+    animation: moverFondo 10s linear infinite;
+}
+
 
 .title {
     background-color: none;
