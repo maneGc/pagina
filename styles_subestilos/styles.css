@@ -1,7 +1,6 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,31 +9,32 @@
 }
 
 
-.title{
+.title {
     background-color: none;
 }
 
-.hero{
+.hero {
     display: grid;
-    grid-template-columns: repeat(8,1fr);
+    grid-template-columns: repeat(8, 1fr);
     grid-template-rows: 50vh;
     gap: 2rem;
 }
 
-.hero__figure{
-    
+.hero__figure {
+
     grid-column: 1/-1;
     grid-row: 1/-1;
-    background-image: linear-gradient(#0a1fdd94,#b700ff73), url('../img/fondo_intro.jpg');
+    background-image: linear-gradient(#0a1fdd94, #b700ff73), url('../img/fondo_intro.jpg');
     background-size: cover;
     background-position: center;
 }
-.hero__img{
+
+.hero__img {
     max-width: 700px;
     display: none;
 }
 
-.hero__texts{
+.hero__texts {
     grid-column: 2/-2;
     grid-row: 2/-2;
     display: flex;
@@ -45,30 +45,31 @@
     text-shadow: 0px 0px 10px black;
 }
 
-.hero__title{
-    font-family: Montserrat,monospace;
+.hero__title {
+    font-family: Montserrat, monospace;
     letter-spacing: 2px;
     font-size: clamp(2rem, 5vw, 4rem);
 }
 
-.hero__span{
+.hero__span {
     font-size: clamp(1rem, 3vw, 2.5rem);
 }
 
 
-.data-bar{
+.data-bar {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     margin: 40px auto;
     font-weight: bold;
 }
-.data-bar__item{
+
+.data-bar__item {
     background-color: dodgerblue;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction:column ;
+    flex-direction: column;
     background-image: linear-gradient(135deg, #7619f0 0%, #2d12c5 100%);
     color: white;
     padding: 15px;
@@ -78,21 +79,22 @@
     box-shadow: 15px 15px 3px #1b1b1b54;
 }
 
-.data-bar__item:nth-of-type(2){
-    background-image:linear-gradient(135deg, #f472b6 0%, #a855f7 100%)
+.data-bar__item:nth-of-type(2) {
+    background-image: linear-gradient(135deg, #f472b6 0%, #a855f7 100%)
 }
-.data-bar__item:nth-of-type(3){
+
+.data-bar__item:nth-of-type(3) {
     background-image: linear-gradient(135deg, #2dd4bf 0%, #0ea5e9 100%)
 }
 
-.db__img{
+.db__img {
     width: 150px;
     height: 150px;
     object-fit: cover;
 }
 
-.introduccion__texts{
-    background-image: linear-gradient(rgba(109, 30, 255, 0.726),#0228fc93),url("../img/hero_02.jpg");
+.introduccion__texts {
+    background-image: linear-gradient(rgba(109, 30, 255, 0.726), #0228fc93), url("../img/hero_02.jpg");
     height: 250px;
     background-size: cover;
     background-position: center;
@@ -106,40 +108,51 @@
     text-shadow: 0px 0px 10px black;
 }
 
-.introduccion__title{
-    font-family: Montserrat,sans-serif;
+.introduccion__title {
+    font-family: Montserrat, sans-serif;
     font-size: clamp(1rem, 3vw, 1.8rem);
     margin-bottom: 10px;
     text-align: center;
 }
 
-.introduccion__paragraph{
+.introduccion__paragraph {
     max-width: 700px;
     text-align: center;
     font-size: clamp(1rem, 2vw, 1.5rem);
 }
 
 
-.definicion{
-    background-image:url("../img/dot.webp");
+.definicion {
+    background-image: url("../img/dot.webp");
     margin: 20px auto;
     padding: 30px;
     box-shadow: 0px 0px 10px #1b1b1b34;
     border-radius: 10px;
     text-align: center;
+    animation: moverFondo 10s linear infinite;
 }
 
-.definicion__title{
-    font-family: Montserrat,sans-serif;
+@keyframes moverFondo {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 200px 200px;
+    }
+}
+
+.definicion__title {
+    font-family: Montserrat, sans-serif;
     font-size: clamp(1.5rem, 3vw, 2.5rem);
     margin-bottom: 20px;
     color: dodgerblue;
-    background: linear-gradient(45deg,  #0356f0, #06e2a0);
+    background: linear-gradient(45deg, #0356f0, #06e2a0);
     -webkit-background-clip: text;
     color: transparent;
 }
 
-.definicion__paragraph{
+.definicion__paragraph {
     font-size: clamp(1rem, .5vw, 1.5rem);
     max-width: 800px;
     margin: 0 auto;
@@ -149,24 +162,24 @@
 }
 
 
-.zigzag{
+.zigzag {
     margin: 40px auto;
 }
 
-.zigzag__title{
-    font-family: Montserrat,sans-serif;
+.zigzag__title {
+    font-family: Montserrat, sans-serif;
     font-size: clamp(1.5rem, 3vw, 2.5rem);
     margin: 30px auto;
     color: dodgerblue;
-    background: linear-gradient(-45deg,  #03f0bd, #0615e2be);
+    background: linear-gradient(-45deg, #03f0bd, #0615e2be);
     -webkit-background-clip: text;
     color: transparent;
     text-align: center;
 }
 
-.zigzag__item{
+.zigzag__item {
     display: grid;
-    grid-template-columns: 1fr 1fr ;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 500px auto;
     gap: 20px;
     margin: 20px auto;
@@ -174,15 +187,15 @@
     align-items: center;
 }
 
-.zigzag__figure{
+.zigzag__figure {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100%;   
+    height: 100%;
 }
 
-.zigzag__texts{
+.zigzag__texts {
     background-color: rgb(30, 45, 255);
     padding: 20px;
     color: white;
@@ -190,55 +203,66 @@
     flex-direction: column;
     gap: 20px;
     box-shadow: 10px 10px 0 #1e2dff8f,
-                20px 20px 0 #1e2dff59;
+        20px 20px 0 #1e2dff59;
 }
 
-.zigzag__item:nth-of-type(even) .zigzag__texts{
+.zigzag__item:nth-of-type(even) .zigzag__texts {
     box-shadow: -10px -10px 0 #1e2dff8f,
-                -20px -20px 0 #1e2dff59;
+        -20px -20px 0 #1e2dff59;
 }
 
-.zigzag__img{
+.zigzag__img {
     width: 100%;
     height: 100%;
 }
 
-.zigzag__item:nth-child(odd) .zigzag__figure{
+.zigzag__item:nth-child(odd) .zigzag__figure {
     order: 2;
 }
 
 
-.zigzag__subtitle{
-    font-family: Montserrat,sans-serif;
+.zigzag__subtitle {
+    font-family: Montserrat, sans-serif;
     font-size: clamp(1.2rem, 2vw, 1.8rem);
     color: #fff;
 }
 
-.card__container{
+
+.cards__title {
+    font-family: Montserrat, sans-serif;
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+    margin: 30px auto;
+    color: dodgerblue;
+    background: linear-gradient(45deg, #0356f0, #06e2a0);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-align: center;
+}
+
+.card__container {
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
     margin: 40px auto;
 }
 
-.card{
+.card {
     display: grid;
     grid-template-columns: 1fr 2fr;
     background-color: #0356f0;
-    gap:20px
-
+    gap: 20px
 }
 
-
-.card__figure{
+.card__figure {
     width: 100%;
     height: 100%;
     max-height: 250px;
-    background-color: dodgerblue;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #dadada;
 }
 
 
-.card__text{
+.card__text {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -247,22 +271,25 @@
 
 }
 
-.card__title{
-    font-family: Montserrat,sans-serif;
+.card__title {
+    font-family: Montserrat, sans-serif;
     font-size: clamp(1.5rem, 3vw, 2.2rem);
     color: white;
+
 }
-.card__paragraph{
+
+.card__paragraph {
     color: white;
     font-size: clamp(1rem, 2vw, 1.5rem);
 
 }
-.card__img{
+
+.card__img {
     width: 100%;
     height: 100%;
 }
 
-.card__cta{
+.card__cta {
     background-color: white;
     color: #0356f0;
     padding: 10px;
@@ -273,46 +300,49 @@
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.card__cta:hover{
+.card__cta:hover {
     background-color: #0399f0;
     color: white;
 }
 
 
 @media screen and (max-width:800px) {
-    .data-bar{
+    .data-bar {
         grid-template-columns: 1fr;
     }
 
-    .zigzag__item{
+    .zigzag__item {
         grid-template-columns: 1fr;
         grid-template-rows: auto auto;
     }
 
-    .zigzag__item:nth-child(odd) .zigzag__figure{
-    order: -1;
+    .zigzag__item:nth-child(odd) .zigzag__figure {
+        order: -1;
     }
 
-    .zigzag__texts{
+    .zigzag__texts {
 
-    box-shadow: 0px 10px 0 #1e2dff8f,
-                0px 20px 0 #1e2dff59;
-}
-
-    .zigzag__item:nth-of-type(even) .zigzag__texts{
         box-shadow: 0px 10px 0 #1e2dff8f,
-                    0px 20px 0 #1e2dff59;
+            0px 20px 0 #1e2dff59;
     }
 
-    .card{
+    .zigzag__item:nth-of-type(even) .zigzag__texts {
+        box-shadow: 0px 10px 0 #1e2dff8f,
+            0px 20px 0 #1e2dff59;
+    }
+
+    .card {
         grid-template-columns: 1fr;
         padding: 50px 0;
         text-align: center;
     }
 
-    .card__figure{
+    .card__figure {
         display: none;
     }
 
+    .card__cta {
+        margin: 10px auto 0;
+    }
 
 }
