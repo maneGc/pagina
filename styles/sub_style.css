@@ -111,11 +111,12 @@
 /*------------------PAG02------------------*/
 .ejem{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-wrap: wrap;
+
     gap: 20px;
 }
 .ejem__card{
+    flex:400px;
     padding-bottom: 10PX;
     margin: 25px auto;
     background-color: white;

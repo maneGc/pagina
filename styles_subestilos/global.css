@@ -8,7 +8,8 @@
 }
 
 body{
-    background-color: #f5f5f5
+    background-color: #f5f5f5;
+    
 }
 
 .container{
@@ -41,11 +42,28 @@ body{
 
 
 .footer{
-    background-color: #051444d3;
+    background-color: rgba(30, 143, 255, 0.836);
     color: white;
     text-align: center;
-    padding: 30px 0;
+    padding: 50px 0;
     margin-top: 20px;
     border-radius: 50px 50px 0 0;
+    font-family: Lato, sans-serif;
+    font-size:  clamp(0.8rem, 2vw, 1.2rem);
+    display: flex;
+    justify-content: space-evenly;
+    font-weight: bold;
+
 }
 
+.footer__link{
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+
+}
+.footer__link:hover{
+    color: #d3d0d0;
+}

@@ -211,6 +211,11 @@ body{
         20px 20px 0 #1e2dff59;
 }
 
+.zigzag__paragraph {
+    font-size: clamp(1rem, 2.5vw, 1.1rem);
+    line-height: 1.5;
+}
+
 .zigzag__item:nth-of-type(even) .zigzag__texts {
     box-shadow: -10px -10px 0 #1e2dff8f,
         -20px -20px 0 #1e2dff59;
